@@ -1,4 +1,9 @@
 import { IoSearch } from "react-icons/io5";
+import { IoLocationOutline } from "react-icons/io5";
+import { FaHome } from "react-icons/fa";
+
+import { AiFillDollarCircle } from "react-icons/ai";
+import { IoIosArrowDown } from "react-icons/io";
 const Banner = () => {
   return (
     <div>
@@ -21,7 +26,7 @@ const Banner = () => {
           </div>
         </div>
         {/* search option */}
-        <div className="hero-content border lg:w-[950px] h-[40px]  bg-white absolute mt-28">
+        <div className="hero-content border lg:w-[950px] h-[40px]  bg-white absolute mt-24">
           <div className=" flex-1 flex gap-5 text-base font-normal text-[#6B7280]">
             <IoSearch className="text-2xl" />
             <h1>Search properties</h1>
@@ -31,6 +36,36 @@ const Banner = () => {
           <div className="  flex gap-5 text-base font-normal text-white ">
             <IoSearch className="text-2xl" />
             <h1>Find Property</h1>
+          </div>
+        </div>
+        <div className="hero-content  lg:w-[950px] h-[40px]   absolute mt-[220px]">
+          <div className="flex flex-1 justify-between text-lg font-semibold">
+            <h1 className="flex">
+              {" "}
+              <IoLocationOutline className="mt-1 text-[#EE6611]" /> Your
+              Location{" "}
+            </h1>
+            <h1 className="flex gap-1">
+              <FaHome className="mt-1 text-[#EE6611]" /> Property Type
+            </h1>
+            <h1 className="flex gap-1">
+              {" "}
+              <AiFillDollarCircle className="mt-1 text-[#EE6611]" /> Budget
+            </h1>
+          </div>
+          <div className="hero-content  lg:w-[950px] h-[40px]   absolute mt-[100px]">
+            <div className="flex gap-[100px] ">
+              <div className="hero-content border lg:w-[250px] h-[40px] bg-[#ECF5FF]">
+                {" "}
+                <IoIosArrowDown className="-mr-48 text-lg text-[#EE6611]" />{" "}
+              </div>
+              <div className="hero-content border lg:w-[250px] h-[40px] bg-[#ECF5FF]">
+                <IoIosArrowDown className="-mr-48 text-lg text-[#EE6611]" />
+              </div>
+              <div className="hero-content border lg:w-[250px] h-[40px] bg-[#ECF5FF]">
+                <IoIosArrowDown className="-mr-48 text-lg text-[#EE6611]" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
